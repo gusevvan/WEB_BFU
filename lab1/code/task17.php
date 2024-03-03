@@ -31,7 +31,7 @@ $sum = 0;
 foreach ($arr2d as $arr1d) {
     $sum += array_sum($arr1d);
 }
-echo $sum, "\n";
+echo "Sum is: ", $sum, "\n";
 $cicleArr = array();
 for ($i = 0; $i < 3; $i++) {
     $row = array();
@@ -48,12 +48,12 @@ for ($i = 0; $i < 3; $i++) {
 }
 $exprArr = array(2, 5, 3, 9);
 $result = $exprArr[0] * $exprArr[1] + $exprArr[2] * $exprArr[3];
-echo $result, "\n";
+echo "Resul is: ", $result, "\n";
 $user = ['name'=>'Ivan', 'surname'=>'Ivanov', 'patronymic'=>'Ivanovich'];
 echo $user['surname'] . " " . $user['name'] . " " . $user['patronymic'], "\n";
 $date = ['year'=>'2024', 'month'=>'03', 'day'=>'03'];
 echo $date['year'] . '-'  . $date['month'] . '-' . $date['day'] . "\n"; 
 $arr = ['a', 'b', 'c', 'd', 'e'];
-echo count($arr), "\n";
-echo $arr[count($arr) - 1], "\n";
-echo $arr[count($arr) - 2], "\n";
+echo "Num elements is: ", count($arr), "\n";
+echo "Last eleement is: ", $arr[count($arr) - 1], "\n";
+echo "Penultimate element is: ", $arr[count($arr) - 2], "\n";
